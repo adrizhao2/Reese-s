@@ -24,7 +24,7 @@ class ViewController: UIViewController {
             messageLabel.text = messages[0]
             messageLabel.textColor = UIColor.brown
             messageLabel.textAlignment = .left
-        } else if messageLabel.text == messages[0] {
+        } else {
             messageLabel.text = messages[1]
             messageLabel.textColor = UIColor.orange
             messageLabel.textAlignment = .right
