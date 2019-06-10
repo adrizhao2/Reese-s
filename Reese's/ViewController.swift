@@ -16,17 +16,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
         if messageLabel.text == "" || messageLabel.text == messages[1] {
             messageLabel.text = messages[0]
-            messageLabel.textColor = UIColor.brown
+            messageLabel.textColor = .brown
             messageLabel.textAlignment = .left
         } else {
             messageLabel.text = messages[1]
-            messageLabel.textColor = UIColor.orange
+            messageLabel.textColor = .orange
             messageLabel.textAlignment = .right
         }
     }
